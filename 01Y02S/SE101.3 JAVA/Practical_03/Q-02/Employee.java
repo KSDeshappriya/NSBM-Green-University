@@ -2,23 +2,31 @@ package com.mycompany.practical_03_2;
 
 public class Employee {
     private String name;
-    private double salary;
+    private double basicSalary;
     private double bonus;
 
-    public Employee(String name, double salary, double bonus) {
+    // Constructor
+    public Employee(String name, double basicSalary, double bonus) {
         this.name = name;
-        this.salary = salary;
+        this.basicSalary = basicSalary;
         this.bonus = bonus;
     }
 
-    public double getBonusAmount() {
-        return salary + bonus;
+    // Getters
+    public String getName() {
+        return name;
     }
 
-    public String toString() {
-        return "Employee Name: " + name + "\n" +
-                "Basic Salary: " + salary + "\n" +
-                "Bonus: " + bonus + "\n" +
-                "Bonus Amount: " + getBonusAmount();
+    public double getBasicSalary() {
+        return basicSalary;
+    }
+
+    public double getBonus() {
+        return bonus;
+    }
+
+    // Bonus Amount Calculation
+    public double calculateBonusAmount() {
+        return basicSalary + bonus;
     }
 }
