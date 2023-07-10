@@ -1,6 +1,6 @@
 package com.mycompany.practical_04_3;
 
-public class TestPerson {
+public class Practical_04_3 {
     public static void main(String[] args) {
         Student student = new Student();
         student.setName("John Doe");
